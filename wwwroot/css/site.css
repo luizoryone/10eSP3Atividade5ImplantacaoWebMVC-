@@ -1,0 +1,102 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/* Container centralizado */
+.container {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilo para o título piscando */
+.blinking-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007BFF;
+  animation: blink 1s step-start infinite;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Animação do título piscando */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Imagem animada movendo de um lado para o outro */
+.moving-image img {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  animation: move 5s linear infinite;
+}
+
+/* Animação da imagem de um lado para o outro */
+@keyframes move {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: calc(100% - 150px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+/* Estilos para as tabelas */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
